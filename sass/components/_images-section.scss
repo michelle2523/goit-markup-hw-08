@@ -1,0 +1,52 @@
+.images {
+  display: flex;
+  flex-direction: column;
+  padding: $paddingVertical 0px;
+
+  &__heading {
+    font-weight: $fontWeight2;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $Color4;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 280px;
+  }
+  &__items {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  &__sticker {
+    position: relative;
+    width: 370px;
+    height: 70px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  &__text {
+    font-weight: $fontWeight2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $Color1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2f303a;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .images {
+    display: none;
+  }
+}

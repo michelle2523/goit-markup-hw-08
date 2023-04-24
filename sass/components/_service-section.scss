@@ -1,0 +1,61 @@
+.service {
+  border-top: 1px solid #ececec;
+  padding: 60px 0px;
+}
+.button-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0px 0px 40px 15px;
+  width: 300px;
+
+  & > li {
+    list-style: none;
+  }
+  &__item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: $fontWeight3;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $Color4;
+    background: $Color5;
+    border-radius: 4px;
+    border: none;
+    transition: color, background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 5px 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    align-items: center;
+    padding: 0px 125px 30px 125px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service {
+    padding: $paddingVertical 0px;
+  }
+  .button-list {
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .button-list__item:hover,
+  .button-list__item:focus {
+    font-weight: $fontWeight3;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $Color1;
+    background-color: $Color2;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: $cursorForm;
+  }
+}

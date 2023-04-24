@@ -1,0 +1,75 @@
+.work {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 15px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+  &__icon {
+    background: $Color5;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 25px 192px;
+  }
+  &__title {
+    font-weight: $fontWeight2;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $Color4;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  &__description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $Color3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+  .work__card {
+    display: flex;
+    width: 354px;
+  }
+  .work__icon {
+    padding: 25px 145px;
+  }
+  .work__title {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: flex;
+    align-items: start;
+  }
+  .work__card {
+    display: flex;
+    padding-top: $paddingVertical;
+    flex-direction: column;
+    width: 270px;
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  .work__icon {
+    padding: 25px 102px;
+  }
+}

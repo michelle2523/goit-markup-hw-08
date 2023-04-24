@@ -1,0 +1,98 @@
+.team {
+  background: $Color5;
+  padding: $paddingVertical 0px;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    font-weight: $fontWeight2;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $Color4;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px;
+  }
+  &__member {
+    height: 622px;
+    background: $Color1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+  &__name {
+    font-weight: $fontWeight3;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: $Color4;
+    padding: 30px 0px 10px 0px;
+  }
+  &__job {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: $Color3;
+  }
+}
+.social {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 28px 32px 42px 32px;
+  justify-content: center;
+
+  &__icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    fill: #afb1b8;
+    background-color: $Color5;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+  .team__member {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  .team__member {
+    width: 270px;
+    height: 428px;
+  }
+  .social__icon:hover,
+  .social__icon:focus {
+    fill: $Color1;
+    background-color: $Color2;
+  }
+}

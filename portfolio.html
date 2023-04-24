@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="container">
+        <div class="header">
+            <a class="header__logo" href="webstudio.html">Studio</a>
+            <nav class="header__navigation menu">
+                <ul class="header__list">
+                    <li><a class="header__item" href="index.html">Studio</a></li>
+                    <li><a class="header__item header__item--active" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="header__item" href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <ul class="contact">
+                <li class="contact__item menu">
+                    <a href="mailto:info@devstudio.com"><svg width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope1"></use>
+                        </svg> info@devstudio.com</a>
+                </li>
+                <li class="contact__item menu">
+                    <a href="tel:+1212-772-4150"><svg width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg> +1 212-772-4150</a>
+                </li>
+            </ul>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main class="service">
+        <section class="container">
+            <nav class="service-list">
+                <ul class="button-list">
+                    <li><button class="button-list__item">All</button></li>
+                    <li><button class="button-list__item">Web-sites</button></li>
+                    <li><button class="button-list__item">Apps</button></li>
+                    <li><button class="button-list__item">Design</button></li>
+                    <li><button class="button-list__item">Marketing</button></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="container">
+            <ul class="all">
+                <li class="all__item">
+                    <div class="all__item--child1">
+                        <picture>
+                            <source media="screen and (max-width: 767px)"
+                                srcset="./images/img1-M-1x.jpg 1x, ./images/img1-M-2x.jpg 2x" />
+                            <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                                srcset="./images/img1-T-1x.jpg 1x, ./images/img1-T-2x.jpg 2x" />
+                            <source media="screen and (min-width: 1200px)"
+                                srcset="./images/img1-D-1x.jpg 1x, ./images/img1-D-2x.jpg 2x" />
+                            <img src="./images/img1-M-1x.jpg" alt="Technoduck">
+                        </picture>
+                        <div class="all__item--overlay">
+                            <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this
+                                platform for digital espionage
+                                and attacks on competitors' secure servers.</p>
+                        </div>
+                    </div>
+                    <div class="all__item--child2">
+                        <h3 class="all__name">Technoduck</h3>
+                        <p class="all__category">Web-site</p>
+                    </div>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img2-M-1x.jpg 1x, ./images/img2-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img2-T-1x.jpg 1x, ./images/img2-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img2-D-1x.jpg 1x, ./images/img2-D-2x.jpg 2x" />
+                        <img src="./images/img2-M-1x.jpg" alt="Poster New Orlean vs Golden Star">
+                    </picture>
+                    <h3 class="all__name">Poster New Orlean vs Golden Star</h3>
+                    <p class="all__category">Design</p>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img3-M-1x.jpg 1x, ./images/img3-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img3-T-1x.jpg 1x, ./images/img3-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img3-D-1x.jpg 1x, ./images/img3-D-2x.jpg 2x" />
+                        <img src="./images/img3-M-1x.jpg" alt="Seafood Restaurant">
+                    </picture>
+                    <h3 class="all__name">Seafood Restaurant</h3>
+                    <p class="all__category">Apps</p>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img4-M-1x.jpg 1x, ./images/img4-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img4-T-1x.jpg 1x, ./images/img4-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img4-D-1x.jpg 1x, ./images/img4-D-2x.jpg 2x" />
+                        <img src="./images/img4-M-1x.jpg" alt="Project Prime">
+                    </picture>
+                    <h3 class="all__name">Project Prime</h3>
+                    <p class="all__category">Marketing</p>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img5-M-1x.jpg 1x, ./images/img5-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img5-T-1x.jpg 1x, ./images/img5-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img5-D-1x.jpg 1x, ./images/img5-D-2x.jpg 2x" />
+                        <img src="./images/img5-M-1x.jpg" alt="Project Boxes">
+                    </picture>
+                    <h3 class="all__name">Project Boxes</h3>
+                    <p class="all__category">Apps</p>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img6-M-1x.jpg 1x, ./images/img6-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img6-T-1x.jpg 1x, ./images/img6-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img6-D-1x.jpg 1x, ./images/img6-D-2x.jpg 2x" />
+                        <img src="./images/img6-M-1x.jpg" alt="Inspiration has no Borders">
+                    </picture>
+                    <h3 class="all__name">Inspiration has no Borders</h3>
+                    <p class="all__category">Web-site</p>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img7-M-1x.jpg 1x, ./images/img7-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img7-T-1x.jpg 1x, ./images/img7-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img7-D-1x.jpg 1x, ./images/img7-D-2x.jpg 2x" />
+                        <img src="./images/img7-M-1x.jpg" alt="Limited Edition">
+                    </picture>
+                    <h3 class="all__name">Limited Edition</h3>
+                    <p class="all__category">Design</p>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img8-M-1x.jpg 1x, ./images/img8-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img8-T-1x.jpg 1x, ./images/img8-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img8-D-1x.jpg 1x, ./images/img8-D-2x.jpg 2x" />
+                        <img src="./images/img8-M-1x.jpg" alt="Project LAB">
+                    </picture>
+                    <h3 class="all__name">Project LAB</h3>
+                    <p class="all__category">Marketing</p>
+                </li>
+                <li class="all__item">
+                    <picture>
+                        <source media="screen and (max-width: 767px)"
+                            srcset="./images/img9-M-1x.jpg 1x, ./images/img9-M-2x.jpg 2x" />
+                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
+                            srcset="./images/img9-T-1x.jpg 1x, ./images/img9-T-2x.jpg 2x" />
+                        <source media="screen and (min-width: 1200px)"
+                            srcset="./images/img9-D-1x.jpg 1x, ./images/img9-D-2x.jpg 2x" />
+                        <img src="./images/img9-M-1x.jpg" alt="Growing Business">
+                    </picture>
+                    <h3 class="all__name">Growing Business</h3>
+                    <p class="all__category">Apps</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+
+        <nav class="phone">
+            <ul class="phone__list">
+                <li><a class="phone__item" href="index.html">Studio</a></li>
+                <li><a class="phone__item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="phone__item" href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <ul class="phone__contact">
+            <li class="phone__number">
+                <a href="tel:+1212-772-4150">+1 212-772-4150</a>
+            </li>
+            <li class="phone__email">
+                <a style="color: #757575;" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="phone__social">
+            <li><a href="" class="phone__link">Instagram</a></li>
+            <li><a href="" class="phone__link">Twitter</a></li>
+            <li><a href="" class="phone__link">Facebook</a></li>
+            <li><a href="" class="phone__link">LinkedIn</a></li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <footer class="footer-section">
+        <div class="footer-section__items container">
+            <div class="footer-section__items--equal">
+                <div class="footer-section__information">
+                    <a class="header__logo header__logo--color" href="webstudio.html">Studio</a>
+                    <address>
+                        <ul class="contact contact--list">
+                            <li class="contact__adress">695 Park Ave, NY 10065, USA</li>
+                            <li><a class="contact__item contact__item--footer"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a class="contact__item contact__item--footer" href="tel:+1212-772-4150">+1
+                                    212-772-4150</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-media">
+                    <p class="social-media__heading">FIND US ON</p>
+                    <ul class="social social--footer">
+                        <li class="social__icon social__icon--footer"><a href="#"><svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                                </svg></a></li>
+                        <li class="social__icon social__icon--footer"><a href="#"><svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                                </svg></a></li>
+                        <li class="social__icon social__icon--footer"><a href="#"><svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                                </svg></a></li>
+                        <li class="social__icon social__icon--footer"><a href="#"><svg width="20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="newsletter">
+                <p class="newsletter__heading">Subscribe to the newsletter</p>
+                <form name="newsletter" class="newsletter__form">
+                    <input type="e-mail" placeholder="E-mail" name="E-mail">
+                    <button type="submit" class="newsletter__button">
+                        <p>Subscribe</p>
+                        <div class="newsletter__icon">
+                            <svg width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg></a></li>
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
