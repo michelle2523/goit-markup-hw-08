@@ -3,7 +3,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(//images/header-M-1x.jpg);
+    url(../images/header-M-1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -49,7 +49,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(//images/header-T-1x.jpg);
+      url(../images/header-T-1x.jpg);
   }
   .hero__title {
     font-size: 26px;
@@ -63,7 +63,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(//images/header-D-1x.jpg);
+      url(../images/header-D-1x.jpg);
   }
   .hero__title {
     font-size: 44px;
@@ -78,7 +78,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(//images/header-M-2x.jpg);
+      url(../images/header-M-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
@@ -89,7 +89,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(//images/header-T-2x.jpg);
+      url(../images/header-T-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -100,6 +100,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(//images/header-D-2x.jpg);
+      url(../images/header-D-2x.jpg);
   }
 }
